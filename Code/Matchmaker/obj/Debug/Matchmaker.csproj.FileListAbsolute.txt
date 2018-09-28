@@ -2,9 +2,9 @@ P:\ICT\226a\226a_Matchmaker\Code\Matchmaker\bin\Debug\Matchmaker.exe.config
 P:\ICT\226a\226a_Matchmaker\Code\Matchmaker\bin\Debug\Matchmaker.exe
 P:\ICT\226a\226a_Matchmaker\Code\Matchmaker\bin\Debug\Matchmaker.pdb
 P:\ICT\226a\226a_Matchmaker\Code\Matchmaker\obj\Debug\Matchmaker.csprojAssemblyReference.cache
-P:\ICT\226a\226a_Matchmaker\Code\Matchmaker\obj\Debug\Matchmaker.Form1.resources
 P:\ICT\226a\226a_Matchmaker\Code\Matchmaker\obj\Debug\Matchmaker.Properties.Resources.resources
 P:\ICT\226a\226a_Matchmaker\Code\Matchmaker\obj\Debug\Matchmaker.csproj.GenerateResource.cache
 P:\ICT\226a\226a_Matchmaker\Code\Matchmaker\obj\Debug\Matchmaker.csproj.CoreCompileInputs.cache
 P:\ICT\226a\226a_Matchmaker\Code\Matchmaker\obj\Debug\Matchmaker.exe
 P:\ICT\226a\226a_Matchmaker\Code\Matchmaker\obj\Debug\Matchmaker.pdb
+P:\ICT\226a\226a_Matchmaker\Code\Matchmaker\obj\Debug\Matchmaker.frmMain.resources

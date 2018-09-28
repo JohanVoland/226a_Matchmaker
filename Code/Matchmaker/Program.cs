@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Matchmaker
 {
-    static class Program
+    public class Program
     {
         /// <summary>
         /// The main entry point for the application.
@@ -18,5 +18,12 @@ namespace Matchmaker
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmMain());
         }
+
+        #region public methods
+        public string importCSV(string file)
+        {
+            return file;
+        }
+        #endregion
     }
 }

@@ -26,7 +26,11 @@ namespace Matchmaker
         // Bouton Importer
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            string line;
+            using (var reader = new System.IO.StreamReader("P:/ICT/226a/226a_Matchmaker/Doc/TestData.csv"))
+            {
+                line = reader.ReadLine();
+            }
         }
 
         // Groupe Importer
@@ -39,6 +43,13 @@ namespace Matchmaker
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void DisplayGroup_TextChanged(object sender, EventArgs e)
+        {
+            Program program = new Program();
+            string displayGroup;
+            displayGroup = program.importCSV(line);
         }
     }
 }
