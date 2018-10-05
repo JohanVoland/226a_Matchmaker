@@ -7,3 +7,4 @@ P:\ICT\226a\226a_Matchmaker\Code\Matchmaker\obj\Debug\Matchmaker.csproj.CoreComp
 P:\ICT\226a\226a_Matchmaker\Code\Matchmaker\obj\Debug\Matchmaker.exe
 P:\ICT\226a\226a_Matchmaker\Code\Matchmaker\obj\Debug\Matchmaker.pdb
 P:\ICT\226a\226a_Matchmaker\Code\Matchmaker\obj\Debug\Matchmaker.frmMain.resources
+P:\ICT\226a\226a_Matchmaker\Code\Matchmaker\obj\Debug\Matchmaker.csprojAssemblyReference.cache

@@ -28,16 +28,24 @@ namespace Matchmaker
         {
             // Select, read and import csv file
             string file;
-            using (var reader = new System.IO.StreamReader("P:/ICT/226a/226a_Matchmaker/Doc/TestData.csv"))
-            {
-                file = reader.ReadLine();
-            }
+            file = "P:/ICT/226a/226a_Matchmaker/Doc/TestData.csv";
             Program program = new Program();
-            string displayGroup;
-            displayGroup = program.importCSV(file);
 
-            // Test Affichage
-            richTextBox1.Text = file;
+            program.importCSV(file);
+
+            List<string> list = new List<string>();
+            using (var reader = new System.IO.StreamReader(file))
+            {
+                while (!reader.EndOfStream)
+                {
+                    file = reader.ReadLine();
+                    list.Add(file);
+                }
+            }
+
+            // Affiche pour le moment tout le fichier csv
+            richTextBox1.Lines = list.ToArray();
+            textBox1.Text = "P:/ICT/226a/226a_Matchmaker/Doc/TestData.csv";
         }
 
         // Groupe Importer

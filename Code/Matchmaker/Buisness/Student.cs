@@ -14,14 +14,17 @@ namespace TestMatchMaker
         #region constructor
         public Student(string name, Boolean isCapt, List<int> listOfChoices)
         {
-            name = "Jean";
-            isCapt = true;
-            List<int> ListOfChoices = new List<int> { 1, 2, 3, 4 };
-
             this.name = name;
             this.isCapt = isCapt;
             this.listOfChoices = listOfChoices;
         }
+
+        /*public Student(// Paramètres adaptés au fichier csv)
+        {
+            this.name = ???;
+            this.isCapt = ???;
+            this.listOfChoices = ???;
+        }*/
         #endregion constructor
 
         #region public accessors and mutators (get /set)
