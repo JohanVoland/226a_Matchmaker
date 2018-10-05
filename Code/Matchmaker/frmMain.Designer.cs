@@ -31,7 +31,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.DisplayGroup = new System.Windows.Forms.TextBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,20 +65,21 @@
             this.groupBox1.Text = "Importer un Fichier CSV";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // DisplayGroup
+            // richTextBox1
             // 
-            this.DisplayGroup.Location = new System.Drawing.Point(58, 30);
-            this.DisplayGroup.Name = "DisplayGroup";
-            this.DisplayGroup.Size = new System.Drawing.Size(100, 20);
-            this.DisplayGroup.TabIndex = 3;
-            this.DisplayGroup.TextChanged += new System.EventHandler(this.DisplayGroup_TextChanged);
+            this.richTextBox1.Location = new System.Drawing.Point(34, 21);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(269, 224);
+            this.richTextBox1.TabIndex = 3;
+            this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(607, 313);
-            this.Controls.Add(this.DisplayGroup);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmMain";
             this.Text = "Match Maker";
@@ -86,7 +87,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -95,7 +95,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox DisplayGroup;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 

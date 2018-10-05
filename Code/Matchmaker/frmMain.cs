@@ -26,11 +26,18 @@ namespace Matchmaker
         // Bouton Importer
         private void button1_Click_1(object sender, EventArgs e)
         {
-            string line;
+            // Select, read and import csv file
+            string file;
             using (var reader = new System.IO.StreamReader("P:/ICT/226a/226a_Matchmaker/Doc/TestData.csv"))
             {
-                line = reader.ReadLine();
+                file = reader.ReadLine();
             }
+            Program program = new Program();
+            string displayGroup;
+            displayGroup = program.importCSV(file);
+
+            // Test Affichage
+            richTextBox1.Text = file;
         }
 
         // Groupe Importer
@@ -39,17 +46,16 @@ namespace Matchmaker
 
         }
 
-        // TextBox
+        // TextBox qui affiche le fichier importé
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void DisplayGroup_TextChanged(object sender, EventArgs e)
+        // Affichage du résultat
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
-            Program program = new Program();
-            string displayGroup;
-            displayGroup = program.importCSV(line);
+
         }
     }
 }

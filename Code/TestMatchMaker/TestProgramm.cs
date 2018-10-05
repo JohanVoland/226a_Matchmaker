@@ -11,7 +11,7 @@ namespace Matchmaker
         private string testExtentionExpected;
         private string file;
         private Program testProgramm = null;
-        #endregion
+        #endregion private attributes 
 
         [TestInitialize]
         public void Init()
@@ -25,6 +25,7 @@ namespace Matchmaker
         {
             // CSV file ?
             // Given
+            file = "TestData.csv";
             testExtentionExpected = ".csv";
 
             // When
