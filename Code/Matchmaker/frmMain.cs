@@ -26,25 +26,16 @@ namespace Matchmaker
         // Bouton Importer
         private void button1_Click_1(object sender, EventArgs e)
         {
-            // Select, read and import csv file
+            // Select and import the csv file
             string file;
             file = "P:/ICT/226a/226a_Matchmaker/Doc/TestData.csv";
             Program program = new Program();
-
             program.importCSV(file);
 
-            List<string> list = new List<string>();
-            using (var reader = new System.IO.StreamReader(file))
-            {
-                while (!reader.EndOfStream)
-                {
-                    file = reader.ReadLine();
-                    list.Add(file);
-                }
-            }
+            // Read the csv file
+            program.ReadFile(file);
 
             // Affiche pour le moment tout le fichier csv
-            richTextBox1.Lines = list.ToArray();
             textBox1.Text = "P:/ICT/226a/226a_Matchmaker/Doc/TestData.csv";
         }
 
@@ -54,7 +45,7 @@ namespace Matchmaker
 
         }
 
-        // TextBox qui affiche le fichier importé
+        // TextBox qui affiche le chemin du fichier importé
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace TestMatchMaker
+namespace Matchmaker
 {
     [TestClass]
     public class TestStudent
@@ -13,7 +13,7 @@ namespace TestMatchMaker
             // Given
             Student testStudent;
             string testNameExpected = "Jean";
-            Boolean testIsCaptExpected = true;
+            int testIsCaptExpected = 1;
             List<int> testListOfChoicesExpected = new List<int> { 1, 2, 3, 4 };
 
             // Then

@@ -1,22 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TestMatchMaker
+namespace Matchmaker
 {
     public class Student
     {
         #region private attributes
         private string name;
-        private Boolean isCapt;
+        private int isCapt;
         private List<int> listOfChoices = null;
+
+        private List<string> Choix1 = null;
+        private List<string> Choix2 = null;
+        private List<string> Choix3 = null;
+        private List<string> Choix4 = null;
         #endregion private attributes
 
         #region constructor
-        public Student(string name, Boolean isCapt, List<int> listOfChoices)
+        // Création d'un élève
+        public string addStudent(string name, int isCapt, List<int> listOfChoices)
         {
+            // Récupérer les informations de l'utilisateur
             this.name = name;
             this.isCapt = isCapt;
             this.listOfChoices = listOfChoices;
+
+            return name;
         }
 
         /*public Student(// Paramètres adaptés au fichier csv)
@@ -25,6 +34,9 @@ namespace TestMatchMaker
             this.isCapt = ???;
             this.listOfChoices = ???;
         }*/
+
+        // Mettre les élèves dans les différents groupes
+        
         #endregion constructor
 
         #region public accessors and mutators (get /set)
@@ -33,7 +45,7 @@ namespace TestMatchMaker
             get { return this.name; }
         }
 
-        public Boolean IsCapt
+        public int IsCapt
         {
             get { return this.isCapt; }
         }
